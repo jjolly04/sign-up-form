@@ -1,16 +1,71 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+ font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+
 
 @font-face {
   font-family: "actionman";
-  src:
-    url("fonts/action_man-webfont.woff2") format("woff2"),
+  src: url("fonts/action_man-webfont.woff2") format("woff2"),
     url("fonts/action_man-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
+body {
+  display: flex;
+}
+
+.main {
+  display: flex;
+  flex-flow: column;
+}
 
 
+.sidebar {
+  background-image: url(images/abstract-art-bg.jpg);
+  height: 100vh;
+  width: 40vw;
+}
 
+
+.top {
+  background-color:rgb(228, 233, 237) ;
+  height: 34vh;
+  width: 60vw;
+ 
+}
+.middle {
+  height: 33vh;
+  width: 60vw;
+}
+
+.bottom {
+  background-color: rgb(228, 233, 237);
+  height: 34vh;
+  width: 60vw;
+
+}
 
 
 
