@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 * {
@@ -7,22 +9,36 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
- font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
-
 
 @font-face {
   font-family: "actionman";
@@ -41,34 +57,77 @@ body {
   flex-flow: column;
 }
 
-
 .sidebar {
+  position: relative;
   background-image: url(images/abstract-art-bg.jpg);
   height: 100vh;
   width: 40vw;
 }
 
+.top,
+.bottom {
+  background-color: rgb(244, 246, 248);
+  height: 36vh;
+  width: 60vw;
+}
 
 .top {
-  background-color:rgb(228, 233, 237) ;
-  height: 34vh;
-  width: 60vw;
- 
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+
+  padding: 20px;
+
 }
+
+
 .middle {
-  height: 33vh;
+  position: relative;
+  height: 32vh;
   width: 60vw;
+  box-shadow: 0 5px 5px -2px rgb(201, 202, 203);
 }
 
-.bottom {
-  background-color: rgb(228, 233, 237);
-  height: 34vh;
-  width: 60vw;
+.logo-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  position: absolute;
+  top: 16vh;
+  background-color: black;
+  width: inherit;
+  height: 20vh;
+  opacity: 0.5;
+  padding: 20px;
 }
 
+.logo {
+  position: absolute;
+  background-image: url(images/odin-lined.png);
+  height: 200px;
+  width: auto;
+}
 
+.odin-logo {
+  height: 140px;
+  width: 100px;
+}
 
+.logo-title {
+  font-family: "actionman", sans-serif;
+  font-size: 80px;
+
+  color: white;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+
+  margin: 20px;
+}
 
 a:visited {
   color: black;
