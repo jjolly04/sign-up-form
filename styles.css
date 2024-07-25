@@ -60,9 +60,11 @@ body {
 .sidebar {
   position: relative;
   background-image: url(images/abstract-art-bg.jpg);
-  height: 100vh;
+  height: auto;
   width: 40vw;
+  text-align: center;
 }
+
 
 .top,
 .bottom {
@@ -80,12 +82,13 @@ body {
 
 }
 
-
 .middle {
   position: relative;
-  height: 32vh;
+ 
+  height: auto;
   width: 60vw;
   box-shadow: 0 5px 5px -2px rgb(201, 202, 203);
+  padding: 20px 450px 20px 40px;
 }
 
 .logo-bg {
@@ -121,14 +124,74 @@ body {
   color: white;
 }
 
-p {
+p{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
 
   margin: 20px;
 }
 
+h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+ 
+}
+
+.label-box{
+  display: flex;
+  flex-flow: column wrap;
+  width: 15vw;
+
+
+
+}
+
+.input-group {
+  height: 28vh;
+  width: 70px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  
+}
+
+input {
+  
+  width: 250px;
+  border: 1px solid #E5E7EB;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+  
+
+}
+
+label {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 11px;
+  color: rgb(28, 29, 41);
+  font-weight: 600;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.picture-credit {
+  position: absolute;
+  top: 750px;
+  right: 31px;
+  color: white;
+}
+
 a:visited {
-  color: black;
+  color: white;
 }
