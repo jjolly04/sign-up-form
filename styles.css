@@ -65,7 +65,6 @@ body {
   text-align: center;
 }
 
-
 .top,
 .bottom {
   background-color: rgb(244, 246, 248);
@@ -79,12 +78,11 @@ body {
   justify-content: flex-end;
 
   padding: 20px;
-
 }
 
 .middle {
   position: relative;
- 
+
   height: auto;
   width: 60vw;
   box-shadow: 0 5px 5px -2px rgb(201, 202, 203);
@@ -124,7 +122,7 @@ body {
   color: white;
 }
 
-p{
+p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 22px;
   font-weight: 600;
@@ -136,16 +134,12 @@ h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 25px;
   font-weight: 600;
- 
 }
 
-.label-box{
+.label-box {
   display: flex;
   flex-flow: column wrap;
   width: 15vw;
-
-
-
 }
 
 .input-group {
@@ -154,18 +148,6 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-  
-}
-
-input {
-  
-  width: 250px;
-  border: 1px solid #E5E7EB;
-  border-radius: 5px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
-  
-
 }
 
 label {
@@ -175,15 +157,58 @@ label {
   font-weight: 600;
   letter-spacing: 0.7px;
   text-transform: uppercase;
-
 }
 
 form {
   display: flex;
   justify-content: space-between;
-
 }
 
+input {
+  width: 250px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+input:invalid {
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+input + span {
+  position: relative;
+}
+
+input[type="password"]:invalid + span::after {
+  font-size: 0.6rem;
+  position: absolute;
+  content: "*Passwords do not match";
+  color: red;
+  top: 2px;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 2px 2px 3px -3px rgb(0, 0, 0);
+  border: 1px solid #4166d7;
+}
+
+input[type="tel"]:invalid + span::after {
+  font-size: 0.6rem;
+  position: absolute;
+  content: "*Please enter a valid phone number";
+  color: red;
+  top: 2px;
+}
+
+input[id="password"]:invalid + span::after {
+  font-size: 0.6rem;
+  position: absolute;
+  content: "*Password must have 1 uppercase and lowercase letter, 1 number, and be 6 or more chars";
+  color: red;
+  top: 2px;
+}
 
 .picture-credit {
   position: absolute;
