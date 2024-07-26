@@ -68,14 +68,19 @@ body {
 .top,
 .bottom {
   background-color: rgb(244, 246, 248);
-  height: 36vh;
   width: 60vw;
+}
+
+.bottom {
+  height: 27vh;
+  padding: 20px 0px 0px 40px;
 }
 
 .top {
   display: flex;
   flex-flow: column;
   justify-content: flex-end;
+  height: 36vh;
 
   padding: 20px;
 }
@@ -210,6 +215,18 @@ input[id="password"]:invalid + span::after {
   top: 2px;
 }
 
+button[type = 'submit'] {
+  margin-bottom: 20px;
+  padding: 9px 50px;
+  color: white;
+  background-color: #20a2ba;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0px;
+  box-shadow: 3px 3px 7px -5px black;
+
+}
+
 .picture-credit {
   position: absolute;
   top: 750px;
@@ -217,6 +234,10 @@ input[id="password"]:invalid + span::after {
   color: white;
 }
 
-a:visited {
+.sidebar a:visited {
   color: white;
+}
+
+.bottom a:visited {
+  color:#20a2ba
 }
